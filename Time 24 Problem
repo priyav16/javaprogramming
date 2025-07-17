@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        int hours=sc.nextInt();
+        int minutes=sc.nextInt();
+        int seconds=sc.nextInt();
+        
+        System.out.println("Total Number of hours is "+hours);
+        System.out.println("Total Number of minutes is "+minutes);
+        System.out.println("Total Number of seconds is "+seconds);
+    }
+}
