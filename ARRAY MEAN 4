@@ -6,12 +6,14 @@ public class Solution {
         Scanner sc=new Scanner(System.in);
         int size=sc.nextInt();
         int arr[]=new int[size];
-        int sum=0;
+        float sum=0;
         for(int i=0;i<size;i++){
             arr[i]=sc.nextInt();
-            sum=sum+arr[i];
         }
-        float a=sum/size;
-        System.out.printf("Array Mean Value is %.2f",a);
+        {
+            for(int i=0;i<size;i++)
+            sum=sum+arr[i];
+             System.out.printf("Array Mean Value is %.2f",(sum/size));
+        }
     }
 }
