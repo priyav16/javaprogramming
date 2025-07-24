@@ -3,41 +3,41 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String name=sc.nextLine();
-        int m1=sc.nextInt();
-        int m2=sc.nextInt();
-        int m3=sc.nextInt();
-        int m4=sc.nextInt();
-        int m5=sc.nextInt();
-        int tot=m1+m2+m3+m4+m5;
-        double avg=tot/5.0;
+       Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        int e=sc.nextInt();
+        int f=sc.nextInt();
+        int g=b+c+d+e+f;
+        double h=g/5.0;
         String grade;
-        if(avg>=90){
+        if(h>=100){
+            grade="S";
+        }
+        else if(h>=90){
             grade="A";
         }
-        else if(avg>=85){
-
-            grade="B"; 
+        else if(h>=80){
+            grade="B";
         }
-        else if(avg>=90){
-
-            grade="C"; 
+        else if(h>=70){
+            grade="C";
         }
-        else if(avg>=90){
-
-            grade="D"; 
+        else if(h>=60){
+            grade="D";
         }
-        else if(avg>=85){
-
-            grade="E"; 
-        }else
-            {
+        else if(h>=50){
+            grade="E";
+        }
+        else
+        {
             grade="Fail";
-            }
-        System.out.println("Name of the Student:"+name);
-        System.out.println("Total Mark:"+tot);
-        System.out.printf("Average Mark:%.1f",avg);
-        System.out.println("\nGrade Mark:"+grade);
+        }
+        System.out.println("Name of the Student:"+a);
+        System.out.println("Total Mark:"+g);
+        System.out.println("Average Mark:"+h);
+        System.out.println("Grade Mark:"+grade);
     }
 }
